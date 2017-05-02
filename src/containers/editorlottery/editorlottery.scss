@@ -1,0 +1,224 @@
+@import '../../sass/my.scss';
+
+
+/* 弹窗 begin*/
+.model-view{
+  display: flex;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background: rgba(0,0,0,.8);
+  align-items: center;
+  justify-content: center;
+}
+.model-box{
+  width: calculateSize(690px);
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+}
+
+.close-btn{
+  position: absolute;
+  top: calculateSize(10px);
+  right: calculateSize(10px);
+  .icon-close{
+    width: calculateSize(50px);
+    height: calculateSize(50px);
+    background-image: url(../../images/guanbi.png);
+  }
+}
+.select-boll-content{
+  padding: calculateSize(60px) calculateSize(30px) 0;
+}
+.select-boll-content .red-boll{
+  width: 100%;
+  border-bottom: 1px dashed #e5e5e5;
+}
+
+.blue-boll{
+  padding-top: calculateSize(30px);
+}
+.select-boll-content .boll {
+  padding: 0 0 calculateSize(20px) calculateSize(10px);
+  height: auto;
+  border: none;
+  overflow: hidden
+}
+.select-boll-content .boll div{
+  margin-right: calculateSize(30px);
+  border: calculateSize(2px) solid #C9C9C9;
+  color: #ccc!important;
+}
+.select-boll-content .boll div:nth-of-type(7n){
+  margin-right: 0;
+}
+.select-boll-content .boll div.active{
+  border-color: #FB4D1B;
+  color: #FB4D1B!important;
+  background: #fff;
+}
+.select-boll-content .boll div.blue.active{
+  border-color: #32A5F4;
+  color: #32A5F4!important;
+  background: #fff!important;
+}
+
+.select-boll-content .tit{
+  padding-bottom: calculateSize(14px);
+  line-height: calculateSize(42px);
+  font-size: 15px;
+  color: #000;
+  text-align: center
+}
+.edit-confirm{
+  padding:calculateSize(15px) 0;
+  border-top: 1px solid #e5e5e5;
+  margin-top: calculateSize(4px);
+}
+.upload-botton{
+  width: calculateSize(360px);
+  background: #FB4D1B;
+  border: calculateSize(2px) solid rgba(4,4,4,0.08);
+  color: #fff;
+  font-size: 16px;
+}
+
+/*
+ body beign
+*/
+.editor-lottery{
+  width: 100%;
+  background:#fff;
+
+  position: absolute;
+  min-height: 100%;
+}
+/* 期次下拉 begin*/
+.issue{
+  display: flex;
+  //width: calculateSize(356px);
+  padding-left: calculateSize(20px);
+  align-items: center;
+  position: relative;
+  height: calculateSize(60px);
+  background: #FFFFFF;
+  border: 1px solid #DFDFDF;
+  border-radius: 4px;
+  font-size:15px;
+  color: #888;
+  z-index: 9;
+}
+.issue input{
+  width: calculateSize(174px);
+  height: calculateSize(60px);
+  line-height: calculateSize(80px);
+  padding-left: calculateSize(38px);
+  font-size: 15px;
+  color: #353535;
+}
+.icon-select{
+  width: calculateSize(56px);
+  height: calculateSize(56px);
+  margin-left: calculateSize(20px);
+  background-image: url('../../images/xiala-a.png');
+}
+.icon-select.trans-down{
+  transition: all .2s linear;
+  transform: rotate(90deg);
+}
+.issue .issue-list{
+  /*display: none;*/
+  width: 100%;
+  position: absolute;
+  top: calculateSize(64px);
+  left:0;
+  background: #FFFFFF;
+  border: 1px solid #DFDFDF;
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.24);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.issue .issue-list div{
+  padding: calculateSize(16px) calculateSize(10px) 0 calculateSize(10px);
+  line-height: calculateSize(58px);
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: -1px;
+  font-size: 15px;
+  color: #353535;
+  text-align: center;
+}
+/* 期次下拉end */
+/* 倍数 begin */
+
+.multiple{
+  display: flex;
+  //width: calculateSize(376px);
+}
+.multiple input{
+  width: calculateSize(236px);
+  height: calculateSize(56px);
+  border: calculateSize(2px) solid #DFDFDF;
+  border-radius: 4px;
+  margin: 0 calculateSize(10px);
+  font-size: 16px;
+  color: #353535;
+  text-align: center;
+}
+.multiple i{
+  width: calculateSize(60px);
+  height: calculateSize(60px);
+}
+.icon-reduce{
+   background-image: url('../../images/jian-n.png');
+   &.disabled {
+   background-image: url('../../images/jian-d.png');
+  }
+}
+
+.icon-plus{
+  background-image: url('../../images/jia.png');
+  &.disabled {
+    background-image: url('../../images/jia-d.png');
+  }
+}
+
+/* 倍数 begin */
+
+/* 选号 begin*/
+.betting{
+  padding: calculateSize(10px) 0 0;
+}
+.betting .boll-box{
+  position: relative;
+}
+.betting .icon-edit{
+  width: calculateSize(50px);
+  height: calculateSize(50px);
+  position: absolute;
+  right: calculateSize(0px);
+  top: 50%;
+  transform: translate(0, -50%);
+  background-image: url('../../images/xiugai.png')
+}
+.betting .boll{
+  padding-left: calculateSize(0px);
+}
+.editor-lottery .bouns-content{
+  padding-top: calculateSize(20px);
+}
+/* 选号 end*/
+.edit-tips{
+  padding-top: calculateSize(30px);
+  font-size: 13px;
+  color: #888;
+  text-align: center;
+}
+
+/* body end*/
+
+
+

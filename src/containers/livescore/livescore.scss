@@ -1,0 +1,152 @@
+@import '../../sass/my.scss';
+.live-score{
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  position: absolute;
+  min-height: 100%;
+}
+.live-team{
+  padding: calculateSize(30px) 0 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.team-header{
+  height: calculateSize(44px);
+  margin-bottom: calculateSize(68px);
+  text-align: center;
+  position: relative;
+
+}
+.icon-football{
+  width: calculateSize(30px);
+  height: calculateSize(30px);
+  position: absolute;
+  left: calculateSize(32px);
+  top: 50%;
+  margin-top: calculateSize(-15px);
+  z-index: 2;
+  background-image: url('../../images/order/complete.png');
+
+  &.wait{
+    background-image: url('../../images/order/wait.png');
+  }
+  &.in{
+     background-image: url('../../images/order/in.png');
+  }
+}
+.issue-label{
+  display: inline-block;
+  width: calculateSize(200px);
+  height: calculateSize(44px);
+  
+  line-height: calculateSize(44px);
+  background-color: rgba(0,0,0,.05);
+  border-radius: calculateSize(56px);
+  font-size: 13px;
+  color: #666;
+  overflow: hidden;
+}
+.team-body{
+  padding-bottom: calculateSize(40px);
+}
+.team-start-time{
+
+  line-height: calculateSize(34px);
+  color: #888;
+  font-size: 12px;
+  text-align: center;
+}
+.team-start-time image{
+  width: calculateSize(24px);
+  height: calculateSize(24px);
+  vertical-align: calculateSize(-1px);
+}
+.team-body .column div{
+  flex: 1;
+  font-size: 15px;
+  color: #888;
+  line-height: calculateSize(42px);
+  text-align: left;
+}
+.team-body .column div:first-child{
+  text-align: right;
+}
+.team-body div:nth-of-type(2){
+  flex: 0 calculateSize(220px);
+  text-align: center;
+
+}
+.team-body div.score-number{
+  height: calculateSize(66px);
+  line-height: calculateSize(66px);
+  font-size: 24px;
+  color: #353535;
+}
+.half-socre{
+  text-align: center;
+  color: #353535;
+  font-size: 13px;
+
+}
+.hr{
+  height: calculateSize(2px);
+  width: calculateSize(600px);
+  background: #e5e5e5;
+  float: right;
+}
+.left-hr{
+  border-left: 1px solid #e5e5e5;
+  position: absolute;
+  left: calculateSize(46px);
+  top: 0;
+  height: 100%;
+}
+.live-team:nth-of-type(1) .left-hr{
+  top: calculateSize(40px);
+  height: calculateSize(280px);
+}
+
+.live-team:nth-last-of-type(1) .left-hr{
+  height: calculateSize(60px) !important;
+}
+.big-btn{
+  width: calculateSize(356px);
+  margin: calculateSize(74px) auto;
+}
+.icon-refresh{
+  width: calculateSize(100px);
+  height: calculateSize(100px);
+  border-radius: 50%;
+  position: fixed;
+  bottom: calculateSize(80px);
+  right: calculateSize(30px);
+  background-color: #44B561;
+  background-image: url('../../images/order/refresh.png');
+  background-size: 50%!important;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.icon-refresh image{
+  width: calculateSize(50px);
+  height: calculateSize(50px);
+  margin: calculateSize(25px);
+}
+.icon-refresh.an-refresh image{
+  animation: around 1s infinite;
+}
+.an-around{
+  animation: around 1s infinite;
+}
+@keyframes around
+{
+  from {
+
+    transform: rotate(0deg);
+  }
+  to {
+
+    transform: rotate(360deg);
+  }
+}

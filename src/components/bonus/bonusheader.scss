@@ -1,0 +1,37 @@
+/* bouns header begin*/
+@import '../../sass/my.scss';
+
+.lottery-msg{
+  display: flex;
+  padding: calculateSize(40px);
+}
+.lottery-msg .image-box{
+  height: calculateSize(120px);
+}
+.lottery-msg img{
+  width: calculateSize(120px);
+  height: calculateSize(120px);
+}
+.lottery-issue{
+  padding-left: calculateSize(36px);
+  flex: 1;
+  font-size: 16px;
+  color: #353535;
+}
+.lottery-issue .issue-number{
+  display: flex;
+  line-height: calculateSize(48px);
+}
+.lottery-issue .lottery-name{
+  font-size: 17px;
+  padding-right: calculateSize(36px);
+  color: #000;
+}
+.lottery-issue .time{
+  padding-top: calculateSize(24px);
+  white-space: nowrap;
+  line-height: calculateSize(44px);
+  color: #888;
+  font-size: 14px;
+}
+/* bouns header end*/

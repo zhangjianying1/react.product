@@ -1,0 +1,169 @@
+/* pages/programme/programme.wxss */
+@import '../../sass/my.scss';
+
+.lottery{
+  padding: 0 calculateSize(20px) calculateSize(20px);
+  background-color: #EFEFF4;
+  min-height: 100%;
+}
+.show-msg{
+  margin-top: calculateSize(20px);
+  border-radius: calculateSize(8px);
+  position: relative;
+  overflow: hidden;
+}
+.delete-btn{
+  display: flex;
+  height: 100%;
+  width: calculateSize(120px);
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #FB4D1B;
+  z-index: 0;
+}
+.delete-btn img{
+  width: calculateSize(72px);
+  height: calculateSize(72px);
+}
+.show-msg-cont {
+  background: #fff;
+  position: relative;
+  z-index:3;
+}
+.show-msg-cont > img{
+  width: calculateSize(80px);
+  height: calculateSize(80px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.msg-header{
+  display: flex;
+  padding: calculateSize(40px) 0 calculateSize(36px) calculateSize(30px);
+}
+
+.msg-header img{
+  width: calculateSize(84px);
+  height: calculateSize(84px);
+}
+
+.msg-header .msg-info{
+  flex: 1;
+  padding: calculateSize(2px) 0 0 calculateSize(6px);
+  margin: 0 calculateSize(30px) 0 calculateSize(24px);
+  font-size: 13px;
+  color: #555;
+  line-height: calculateSize(26px);
+
+}
+.msg-info .info-name text{
+  padding-left: calculateSize(12px);
+}
+.msg-info .info-strong{
+  padding: calculateSize(26px) calculateSize(112px) 0 0;
+  color: #111;
+  line-height: calculateSize(42px);
+  font-size: 15px;
+}
+.msg-header.show-detail{
+  padding-bottom: 0;
+}
+.msg-header.show-detail img{
+  width: calculateSize(120px);
+  height: calculateSize(120px);
+}
+.msg-header.show-detail .info-strong{
+  padding-top: calculateSize(30px);
+}
+.msg-header.show-detail .msg-info{
+  padding-bottom: calculateSize(20px);
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 15px;
+  line-height: calculateSize(42px);
+}
+
+
+.lottery .bonus-content{
+  padding: calculateSize(22px) 0 ;
+}
+.lottery .bonus-content .boll-box .one-boll view:first-child{
+  margin-left:0;
+}
+.lottery .bonus-content .boll-box .boll-item {
+  margin-left: 0;
+}
+.lottery .bonus-content .boll-box:last-child .boll, .lottery .bonus-content .boll-box:last-child .boll-item{
+  border: none;
+}
+
+.lottery-price{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 calculateSize(30px);
+  border-top: 1px dashed #e5e5e5;
+  line-height: calculateSize(68px);
+  font-size: 13px;
+  color: #888;
+}
+/*竞彩足球 begin*/
+.lottery .bonus-content.football-bonus-content {
+  padding: calculateSize(20px) 0 0;
+}
+.lottery .bonus-content.football-bonus-content .football:last-child{
+  border: none;
+}
+.theory-amount{
+  border-top: 1px dashed #e5e5e5;
+  line-height: calculateSize(88px);
+  font-size: 15px;
+  color: #353535;
+  text-align: center;
+}
+
+.icon-sign{
+  width: calculateSize(136px);
+  height: calculateSize(176px);
+}
+
+/*竞彩足球 end*/
+/*
+ * 没有相关信息   
+*/
+.nothing{
+  display: flex;
+  justify-content: center;
+  padding-top: calculateSize(240px);
+  font-size:15px;
+  color: #888;
+}
+
+.nothing img{
+  width:calculateSize(286px);
+  height: calculateSize(248px);
+  margin-bottom: calculateSize(30px);
+}
+.no-more{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: calculateSize(30px);
+  font-size: 12px;
+  color: #888;
+  line-height: calculateSize(60px);
+}
+.no-more img{
+  width: calculateSize(82px);
+  height: calculateSize(95px);
+}
+.mark2{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0,0,.2);
+}

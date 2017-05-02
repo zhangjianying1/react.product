@@ -1,0 +1,49 @@
+@import '../../sass/my.scss';
+.bonus-number{
+  padding: 0 calculateSize(32px);
+  background: #fff;
+}
+.bonus-tit{
+  display: flex;
+  padding: 0 calculateSize(8px);
+  justify-content: space-between;
+  align-items: center;
+  line-height: calculateSize(75px);
+  border-bottom:  1px solid #e5e5e5;
+  font-size: 14px;
+  color: #353535;
+
+}
+.bonus-tit .play-name span{
+  padding-left: calculateSize(20px);
+}
+.icon-live{
+  text-align: center;
+}
+.icon-live div{
+  font-size: 10px;
+  line-height: calculateSize(26px);
+}
+.icon-live img{
+  display: block;
+  width: calculateSize(48px);
+  height: calculateSize(44px);
+  margin: 0 auto;
+}
+/* 开奖号码 begin*/
+.boll-number{
+  display: flex;
+  height: calculateSize(124px);
+  align-items: center;
+}
+.boll-number img{
+  width: calculateSize(134px);
+  height: calculateSize(104px);
+  margin: 0 auto;
+}
+.wait-text{
+  font-size: 16px;
+  color: #32A5F4;
+  margin: auto;
+}
+/* 开奖号码 end*/

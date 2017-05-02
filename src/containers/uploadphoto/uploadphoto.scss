@@ -1,0 +1,170 @@
+@import '../../sass/my.scss';
+
+
+.img-box{
+  display: flex;
+  padding: 14% 0 4%;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #FF957F;
+  overflow: hidden;
+  z-index: 2;
+}
+
+
+
+.camera, .album{
+  /*position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);*/
+  position: relative;
+}
+.camera{
+  display: flex;
+  width: calculateSize(300px);
+  height: calculateSize(300px);
+  border: calculateSize(5px) solid #FB4D1B;
+  border-radius: 100%;
+  justify-content: center;
+  background: #fff;
+}
+.camera .icon-camera{
+  display: block;
+  width: calculateSize(116px);
+  height: calculateSize(96px);
+  margin: calculateSize(92px) 0 calculateSize(15px);
+  background-image: url(../../images/xiangji.png);
+  background-size: cover;
+}
+.camera .camera-tit{
+  font-size: 15px;
+  color: #FB4D1B;
+  padding: calculateSize(4px);
+}
+
+.camera .camera-tit{
+  padding-top: calculateSize(2px);
+  text-align: center;
+
+}
+.event{
+  width: 100%;
+  height: 100%;
+  font-size: 100px;
+  position: absolute;
+  left:0;
+  top:0;
+  background: #f90;
+  opacity: 0;
+}
+.entry-cont{
+  display: flex;
+  width: calculateSize(650px);
+  padding: 0 calculateSize(50px);
+  justify-content: space-between;
+}
+
+.album{
+  display: flex;
+  width: calculateSize(204px);
+  height: calculateSize(66px);
+  border: calculateSize(2px) solid #fff;
+  border-radius: calculateSize(70px);
+  align-items: center;
+  justify-content: center;
+  margin-top: calculateSize(50px);
+  font-size: 14px;
+  color: #fff;
+}
+.album .icon-auto, .album .icon-album{
+  width: calculateSize(44px);
+  height: calculateSize(33px);
+  margin-right: calculateSize(8px);
+  vertical-align: middle;
+  background-image: url(../../images/xiangce.png);
+  background-size: cover;
+}
+.album .icon-auto{
+  width: calculateSize(33px);
+  height: calculateSize(43px);
+  background-image: url(../../images/zizhu.png);
+}
+
+
+/* controller begin */
+.img-control{
+  display: flex;
+  height: calculateSize(74px);
+  width: 309px;
+  margin: 0 auto - calculateSize(74px);
+  justify-content: space-between;
+  align-items: center;
+}
+.del-img image, .cut-img image{
+  width: calculateSize(50px);
+  height: calculateSize(50px);
+  vertical-align: middle;
+}
+.del-img, .cut-img{
+  font-size: 14px;
+  color: #7F8389;
+
+}
+
+.upload-btns{
+  flex: 1;
+  width: 100%;
+  padding-bottom: calculateSize(60px);
+  padding-top: 100px;
+  background: #fff;
+  text-align: left;
+  background-image: url(../../images/bg.jpg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.upload-btns > div{
+  position: absolute;
+  bottom: calculateSize(100px);
+}
+.upload-botton{
+  display: block;
+  width: calculateSize(360px);
+  height: calculateSize(70px);
+  margin: 0 auto;
+  line-height: calculateSize(70px);
+  background: #FB4D1B;
+  border: calculateSize(2px) solid rgba(4,4,4,0.08);
+  border-radius: calculateSize(10px);
+  color: #fff;
+  font-size: 16px;
+}
+.upload-botton[disabled]{
+  background: #FB4D1B!important;
+  border: calculateSize(2px) solid rgba(4,4,4,0.08)!important;
+  color: #fff!important;
+  opacity: .1;
+  background: #FB4D1B;
+}
+.upload-tips{
+  margin: calculateSize(30px) calculateSize(30px) calculateSize(20px);
+  color: #888;
+  font-size: 10px;
+  line-height: calculateSize(30px);
+}
+.upload-tips .c-red{
+  font-weight: bold;
+}
+.go-help{
+  line-height: calculateSize(40px);
+  padding: 0 calculateSize(10px);
+  border: 1px solid #fff;
+  border-radius: calculateSize(40px);
+  position: fixed;
+  top: calculateSize(30px);
+  right: calculateSize(20px);
+  color: #fff;
+  font-size: calculateSize(26px);
+}

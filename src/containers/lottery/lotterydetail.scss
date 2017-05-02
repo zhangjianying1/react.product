@@ -1,0 +1,129 @@
+@import '../../sass/my.scss';
+
+.open-lottery{
+  width: 100%;
+  position: absolute;
+  min-height: 100%;
+  background: #fff;
+}
+.lottery-status{
+  padding: calculateSize(20px) 0;
+  background: #EFEFF4;
+}
+/** 双色球 begin*/
+.bonus-options{
+  display: flex;
+  justify-content: space-between;
+  margin: calculateSize(20px) 0 calculateSize(22px);
+}
+.bonus-options div{
+  line-height: calculateSize(40px);
+  text-align: center;
+  font-size: 16px;
+  color: #888;
+}
+.bonus-options div:first-child{
+  flex: 1;
+}
+.bonus-options .text-left{
+  padding-left: calculateSize(110px);
+  text-align: left;
+}
+.b-options-price{
+  flex: calculateSize(142px) 0;
+}
+.flex-w-184{
+  flex: calculateSize(184px) 0!important;
+
+}
+
+
+/** end**/
+
+
+
+.open-lottery .bonus-content{
+  padding: calculateSize(20px) 0  0 0;
+}
+/* 已开奖 begin */
+.open-lottery .boll-box{
+  display: flex;
+  align-items:center;
+  border-bottom: 1px dashed #e5e5e5;
+}
+.open-lottery  .boll{
+  border: none;
+  flex: 1;
+}
+.open-lottery .boll div{
+  margin-right: calculateSize(10px);
+}
+
+.open-lottery .bonus-price{
+  flex: calculateSize(142px) 0;
+  font-size:14px;
+  color: #FB4D1B;
+  text-align: center;
+  position: relative;
+}
+/* 未中奖图标 begin*/
+.icon-no-prize{
+  width:calculateSize(112px);
+  height: calculateSize(86px);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../../images/chuo.png);
+}
+/* 未中奖图标 end */
+
+/*复式*/
+.multiple-boll{
+  flex: 1;
+}
+.open-lottery .boll-item{
+  display: flex;
+  align-content: flex-start;
+  border: none;
+  padding: 0;
+}
+.open-lottery .boll-item .tit{
+  padding-top: calculateSize(24px);
+}
+
+
+/*.open-lottery .boll-item .boll view:nth-of-type(1n){
+    margin-left: -calculateSize(10px);
+}*/
+/* 已开奖 end*/
+
+
+
+.price{
+  padding: calculateSize(36px) 0 calculateSize(30px);
+  line-height: calculateSize(40px);
+  font-size: 14px;
+  color: #888;
+}
+.count-amount{
+  padding-bottom: calculateSize(30px);
+}
+
+
+/*
+ * 返回
+*/
+.back-btns{
+  padding: calculateSize(24px) 0 calculateSize(20px);
+  text-align: center;
+}
+.back-btns button{
+  width: calculateSize(360px);
+  border: 1px solid #FB4D1B;
+  height:calculateSize(70px);
+  line-height: calculateSize(70px);
+  font-size: 16px;
+  color: #FB4D1B;
+  background: none;
+}

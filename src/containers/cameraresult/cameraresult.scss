@@ -1,0 +1,40 @@
+@import '../../sass/my.scss';
+
+.camera-result{
+  width: 100%;
+  padding: 0 0 calculateSize(45px);
+  min-height: 100%;
+  background: #fff;
+  position: absolute;
+}
+.lottery-msg{
+  background: #fff;
+}
+.lottery-status{
+  padding: calculateSize(20px) 0;
+  background: #EFEFF4;
+}
+/**/
+.bonus-number{
+  padding: 0 calculateSize(32px);
+  background: #fff !important;
+}
+
+.lottery-detail .bonus-content{
+  padding-bottom: calculateSize(75px);
+}
+
+.price{
+  padding: calculateSize(30px) 0 calculateSize(30px);
+  line-height: calculateSize(40px);
+  font-size: 14px;
+  color: #888;
+}
+
+.btns-confirm{
+  width: calc(100% - calculateSize(180px));
+  padding: 0 calculateSize(90px);
+  position: fixed;
+  bottom: calculateSize(35px);
+}
+

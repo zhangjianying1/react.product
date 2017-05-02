@@ -1,0 +1,88 @@
+@import '../../sass/my.scss';
+
+.ticket-list{
+  padding: 0 calculateSize(20px)
+}
+.order{
+  padding: 0 calculateSize(30px) calculateSize(20px);
+  margin-top: calculateSize(20px);
+  border-radius: calculateSize(8px);
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+}
+.icon-sign{
+  width: calculateSize(136px);
+  height: calculateSize(176px);
+  padding-right: calculateSize(40px);
+  line-height: calculateSize(246px);
+  background: #8ACFFE;
+  border-radius: 50%;
+  position: absolute;
+  left: calculateSize(-88px);
+  top: calculateSize(-88px);
+  transform: scale(1, .9);
+  font-size: 18px;
+  color: #fff;
+  text-align: right;
+}
+.order .tit{
+  border-bottom: calculateSize(2px) solid #E5E5E5;
+  line-height: calculateSize(70px);
+  font-size: 15px;
+  color: #8ACFFE;
+  text-align: center;
+}
+.order > .column{
+  align-items: flex-start;
+  border-bottom: calculateSize(2px) solid #E5E5E5;
+}
+.order .label{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calculateSize(116px);
+  padding: calculateSize(10px) 0;
+  line-height: calculateSize(40px);
+  font-size: 14px;
+  color: #b2b2b2;
+  white-space: nowrap;
+}
+.order .order-msg{
+  flex: 1;
+  padding: calculateSize(10px) calculateSize(20px);
+  line-height: calculateSize(40px);
+  font-size: 14px;
+  color: #353535;
+
+}
+.game{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: calculateSize(10px);
+  line-height: calculateSize(40px);
+  font-size: 14px;
+  color: #353535;
+}
+.game > div:nth-of-type(1){
+  width: calculateSize(140px);
+}
+.play-label{
+  width: calculateSize(136px);
+  height: calculateSize(36px);
+  line-height: calculateSize(36px);
+  text-align: center;
+  border-radius: calculateSize(60px);
+  background-color: rgba(138,207,254, .3);
+  font-size: 12px;
+  color: #666;
+
+}
+.game .play-label{
+  margin-right: calculateSize(10px);
+}
+.big-btn{
+  width: calculateSize(356px);
+  margin: calculateSize(28px) auto;
+}

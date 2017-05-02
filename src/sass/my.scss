@@ -1,0 +1,5 @@
+$old: 75px;
+
+@function calculateSize($px) {
+  @return ($px/$old) * 1rem;
+}

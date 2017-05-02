@@ -1,0 +1,398 @@
+@import '../../sass/my.scss';
+
+/* icon begin*/
+.icon-tag{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: calculateSize(12px) solid #ccc;
+  border-left-color: transparent!important;
+  border-top-color: transparent!important;
+}
+.tag-box{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+.tag-box.active{
+  border-color: #FB4D1B;
+  color: #FB4D1B;
+  background: #FFE5DD;
+}
+.tag-box.active .icon-tag{
+  border-color: #FB4D1B;
+}
+/* icon end*/
+.tab-mark, .bottom-mark{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: calculateSize(220px);
+  background: rgba(0,0,0,.6);
+  z-index:2;
+}
+.bottom-mark{
+  bottom: calculateSize(120px);
+  top: 0;
+}
+.tab{
+  display: flex;
+  justify-content: space-between;
+  margin: calculateSize(20px);
+  position: relative;
+}
+.tab-tit{
+  flex: 0 calculateSize(346px);
+  height: calculateSize(90px);
+  border: calculateSize(2px) solid #ccc;
+  border-radius: calculateSize(8px);
+  line-height: calculateSize(90px);
+  text-align: center;
+  background: #fff;
+  color: #353535;
+  font-size: 15px;
+  position: relative;
+}
+
+.nav-cont{
+  width: 100%;
+  min-height: calculateSize(40px);
+  position: absolute;
+  top: calculateSize(110px);
+  left: 0;
+  background: #fff;
+  border-radius: calculateSize(8px);
+  z-index:9;
+  box-shadow: 0 2px 6px 1px rgba(0,0,0,.3);
+}
+.icon-up{
+  width: calculateSize(10px);
+  height: calculateSize(10px);
+  border: 1px solid #ccc;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  transform: rotate(45deg) translate(0, -50%) scale(0.8, 1);
+  background: #fff;
+  position: absolute;
+  top: calculateSize(-4px);
+  left: calc(25% - 16px);
+  /*box-shadow: -1px -1px 2px 0 rgba(0,0,0,.2);*/
+}
+.nav-body{
+  padding: 0 calculateSize(30px) calculateSize(26px);
+  overflow: hidden;
+}
+.nav-body div{
+  width: calculateSize(146px);
+  margin: calculateSize(20px) calculateSize(16px) 0 0;
+  font-size: 15px;
+  float: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+}
+.nav-body div:nth-of-type(4n){
+  margin-right: 0;
+}
+.nav-body div.active{
+  border-color: #FB4D1B;
+  color: #FB4D1B;
+}
+
+.second-nav .nav-body{
+  display: flex;
+  justify-content: space-between;
+  padding: calculateSize(10px) calculateSize(70px) calculateSize(30px);
+}
+.second-nav .icon-up{
+  left: calc(75% - 8px);
+}
+.second-nav .nav-body div{
+  width: calculateSize(246px);
+}
+.nav-control{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calculateSize(130px);
+  padding: 0 calculateSize(30px);
+  border-top: calculateSize(2px) solid #ccc;
+  font-size: 15px;
+  color: #353535;
+
+}
+.nav-control label{
+  padding-right: calculateSize(28px);
+}
+.nav-control radio{
+  vertical-align: 2px;
+}
+.nav-control .middle-btn{
+  width: calculateSize(146px);
+  margin: 0;
+}
+/* tab-header end*/
+
+/* 球队列表 begin*/
+.soccer-cont{
+  border-top: calculateSize(2px) solid #ccc;
+}
+.soccer-header{
+  height: calculateSize(80px);
+  padding: 0 calculateSize(30px);
+  border-bottom: calculateSize(2px) solid #ccc;
+  position: relative;
+  line-height: calculateSize(80px);
+  font-size: 13px;
+  color: #353535;
+  background: #fff;
+}
+.statement{
+  text-align: center;
+  font-size: 10px;
+  color: #666;
+  line-height: calculateSize(60px);
+  background: #FFE5DD;
+}
+
+.soccer-body{
+  padding-bottom: calculateSize(10px);
+
+}
+.soccer-number{
+  height: calculateSize(58px);
+  line-height: calculateSize(58px);
+  background-color: rgba(0,0,0,.02);
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+
+}
+.soccer-number img{
+  width: calculateSize(35px);
+  height: calculateSize(35px);
+  margin-right: calculateSize(14px);
+  vertical-align: middle;
+}
+.soccer-team{
+  padding: calculateSize(36px) calculateSize(55px) calculateSize(30px);
+}
+.soccer-team .column{
+  justify-content: space-between;
+  position: relative;
+}
+.soccer-name{
+  flex: 1;
+  font-size: 15px;
+  color: #111;
+  text-align: center;
+  line-height: calculateSize(42px);
+}
+.soccer-name:nth-child(2){
+  flex: 0  calculateSize(40px);
+  color: #888;
+  font-size: 15px;
+}
+.soccer-btn{
+  height: calculateSize(64px);
+  border: calculateSize(2px) solid #ccc;
+  margin-top: calculateSize(30px);
+  flex: 0 calculateSize(196px) !important;
+  border-radius: calculateSize(8px);
+  line-height: calculateSize(64px);
+  font-size: 15px;
+  color: 666;
+  text-align: center;
+  background-color: #fff;
+
+}
+.soccer-btn text{
+  color: #b2b2b2;
+  font-size: 12px;
+}
+.soccer-btn.active{
+  border-color: #FB4D1B;
+  color: #FB4D1B;
+}
+.soccer-btn.active text{
+  color: #FF7F59;
+}
+
+.soccer-let-boll{
+  width: calculateSize(40px);
+
+  position: absolute;
+  left: calculateSize(-50px);
+  top: calculateSize(48px);
+  font-size: 13px;
+  text-align: right;
+}
+.soccer-shut{
+  width: calculateSize(40px);
+  height: calculateSize(64px);
+  position: absolute;
+  top: calculateSize(30px);
+  right: calculateSize(-42px);
+}
+.soccer-shut img{
+  width: calculateSize(46px);
+  height: calculateSize(64px);
+}
+.more{
+  width: auto;
+  padding: 0 calculateSize(50px);
+  margin: 0 calculateSize(55px) calculateSize(30px);
+  font-size: 15px;
+  background: #fff;
+  color: #666;
+  border-color: #ccc;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+/* 球队列表 end*/
+
+
+/* 底部 view begin*/
+.fixed-bottom-view{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  z-index:3;
+}
+.bottom-view-header > div{
+  height: calculateSize(84px);
+  flex: 1;
+  padding: 0 calculateSize(30px);
+  border-top: calculateSize(2px) solid #ccc;
+  border-bottom: calculateSize(2px) solid #ccc;
+  position: relative;
+  line-height: calculateSize(84px);
+  text-align: center;
+  font-size: 14px;
+  color: #353535;
+  overflow: hidden;
+
+}
+.bottom-view-header > div:first-child{
+  font-size: 13px;
+  color: #888;
+}
+.bottom-view-header > div:nth-of-type(2) {
+  border: 1px solid #ccc;
+}
+
+.bottom-view-header .tag-box .icon-tag{
+  top: 0;
+  transform: rotate(-90deg);
+}
+.bottom-view-header .tag-box.active{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: calculateSize(-2px);
+  top: calculateSize(-2px);
+  border: calculateSize(2px) solid #FB4D1B;
+  z-index: 4;
+}
+.bottom-view-body{
+  height: calculateSize(110px);
+  padding: 0 calculateSize(30px);
+}
+.bottom-view-body > div{
+  white-space: nowrap;
+}
+.bottom-view-body .price{
+  flex: 0 calculateSize(500px);
+  width: calculateSize(532px);
+  font-size: 13px;
+  color: #888;
+  line-height: calculateSize(38px);
+  overflow: hidden;
+}
+.bottom-view-body .price:last-child{
+  line-height: calculateSize(44px);
+}
+/* 底部 view end*/
+
+/* 过关方式 begin*/
+.fixed-bottom-shut, .fixed-bottom-multiple{
+  width: 100%;
+  position: fixed;
+  bottom: calculateSize(218px);
+  left:0;
+  background: #fff;
+  z-index: 3;
+
+}
+.shut-cont{
+  padding: calculateSize(20px) calculateSize(30px) calculateSize(30px);
+}
+.shut-cont .shut-tit{
+  padding-bottom: calculateSize(4px);
+  line-height: calculateSize(38px);
+  font-size: 13px;
+  color: #b2b2b2;
+}
+.shut-list{
+  margin-right: calculateSize(-30px);
+  overflow: hidden;
+}
+.shut-list div{
+  width: calculateSize(146px);
+  margin-right: calculateSize(30px);
+  margin-bottom: calculateSize(16px);
+  float: left;
+}
+.icon-bottom{
+  width: calculateSize(16px);
+  height: calculateSize(16px);
+  position: absolute;
+  left: 50%;
+  bottom: calculateSize(-14px);
+  background: #fff;
+  transform: rotate(45deg) translateY(-50%);
+
+}
+/* 过关方式 end*/
+
+/* 倍数选择 begin*/
+.fixed-bottom-multiple{
+  bottom: calculateSize(198px);
+}
+.multiple-list{
+  display: flex;
+  justify-content: space-between;
+  padding: calculateSize(14px) calculateSize(60px);
+}
+.multiple-list div{
+  width: calculateSize(116px);
+}
+.number-keyboard{
+  overflow:hidden;
+  margin-left: calculateSize(-2px);
+}
+.number-keyboard div{
+  width: calc(33.33333% - 1px);
+  height: calculateSize(106px);
+  border-left: 1px solid #c0c0c0;
+  border-top: 1px solid #c0c0c0;
+  float: left;
+  text-align: center;
+  line-height: calculateSize(106px);
+  font-size: 27px;
+  color: #1c1c1c;
+}
+.number-keyboard div.fs-20, .number-keyboard div.icon-del-back{
+  background-color: #E7E7EB;
+
+}
+.number-keyboard div.icon-del-back img{
+  width: calculateSize(53px);
+  height: calculateSize(39px);
+}
+/* 倍数选择 end*/

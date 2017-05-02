@@ -1,0 +1,48 @@
+.dialog-loading{
+  width: 80px;
+  height: 90px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 8px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,.4);
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  font-size: 14px;
+  z-index: 100;
+}
+.icon-loading{
+  display:block!important;
+  width: 28px;
+  height: 28px;
+  margin: 20px auto 0;
+  animation: rotate .3s linear infinite;
+  -webkit-animation: rotate .3s  infinite;
+  background-image: url(../../images/loading_icon.png);
+}
+@keyframes rotate{
+  0% {
+    transfrom: rotate(0deg);
+  }
+  100% {
+    transfrom: rotate(3600deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transfrom: rotate(0deg);
+  }
+  100% {
+    transfrom: rotate(3600deg);
+  }
+}
+@keyframes rotate{
+  0% {
+    transfrom: rotate(0deg);
+  }
+  100% {
+    transfrom: rotate(3600deg);
+  }
+}

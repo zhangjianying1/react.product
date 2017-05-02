@@ -1,0 +1,255 @@
+@import '../../sass/my.scss';
+
+/* 弹窗 begin*/
+.model-view{
+  display: flex;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background: rgba(0,0,0,.8);
+  align-items: center;
+  justify-content: center;
+}
+.model-box{
+  width: calculateSize(690px);
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+}
+
+.model-view .close-btn{
+  position: absolute;
+  top: 0;
+  right: calculateSize(10px);
+
+}
+.model-content{
+  padding: calculateSize(40px) calculateSize(60px) 0;
+}
+.soccer-name{
+  margin-bottom: calculateSize(12px);
+  line-height: calculateSize(46px);
+  font-size: 16px;
+  color: #888;
+}
+.soccer-name span{
+  margin-right: calculateSize(30px);
+}
+.soccer-score{
+  display: flex;
+  align-items: center;
+  margin-top: calculateSize(28px);
+}
+.input{
+  height: calculateSize(62px);
+  line-height: calculateSize(62px);
+  text-align: center;
+  font-size: 17px;
+  color: #353535;
+  border-radius: calculateSize(8px);
+  border: calculateSize(2px) solid #DFDFDF;
+}
+.score-number{
+  width: calculateSize(196px);
+
+}
+.persentage{
+  display: flex;
+  align-items: center;
+  padding-left: calculateSize(44px);
+  white-space: nowrap;
+  font-size: 14px;
+  color: #b2b2b2;
+}
+.persentage input{
+  width: calculateSize(120px);
+  margin-left: calculateSize(20px);
+}
+.icon-del{
+  width: calculateSize(60px);
+  height: calculateSize(60px);
+  margin-left: calculateSize(66px);
+  background-image: url(../../images/bt-delete.png);
+}
+.icon-add{
+  display: block!important;
+  margin: calculateSize(100px) auto calculateSize(84px);
+  width: calculateSize(90px);
+  height: calculateSize(90px);
+  background-image: url(../../images/bt-add.png);
+}
+
+.edit-confirm{
+  padding:calculateSize(15px) 0;
+  border-top: 1px solid #e5e5e5;
+  margin-top: calculateSize(4px);
+}
+.upload-botton{
+  width: calculateSize(360px);
+  background: #FB4D1B;
+  border: calculateSize(2px) solid rgba(4,4,4,0.08);
+  color: #fff;
+  font-size: 16px;
+}
+/* 弹窗end */
+
+/* 底部弹出层 begin*/
+.model-view-transup{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  z-index: 100;
+}
+.model-view-transup .model-box{
+  width: 100%;
+  border-radius: 0;
+}
+.model-view-transup .view-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calculateSize(88px);
+  padding: 0 calculateSize(50px);
+  border-bottom: calculateSize(2px) solid #e5e5e5;
+}
+
+/* 弹窗中列表 begin*/
+.three-list{
+  padding: calculateSize(34px) calculateSize(50px) 0;
+  overflow: hidden;
+}
+.three-list > div{
+  display: flex;
+  width: 33.3333%;
+  float: left;
+  justify-content: center;
+  margin-bottom: calculateSize(30px);
+}
+.many-options{
+  padding: calculateSize(24px) calculateSize(30px) calculateSize(20px);
+}
+.list-label{
+  margin: calculateSize(-4px) 0;
+  font-size: 14px;
+  color: #b2b2b2;
+  line-height: calculateSize(40px);
+}
+.five-list{
+  margin: 0 calculateSize(-10px);
+  overflow: hidden;
+}
+.five-list div{
+  width: calc(20% - calculateSize(24px));
+  margin: calculateSize(10px) calculateSize(10px);
+  float: left;
+}
+
+
+/* 弹窗中列表 end*/
+
+
+/*
+ body beign
+*/
+
+.editor-football{
+  width: 100%;
+  background:#fff;
+
+  position: absolute;
+  min-height: 100%;
+  > section{
+    padding: calculateSize(80px) calculateSize(40px) calculateSize(160px);
+  }
+}
+
+/* 倍数 begin */
+
+.multiple{
+  display: flex;
+}
+.multiple input{
+  width: calculateSize(160px);
+  height: calculateSize(58px);
+  border: calculateSize(2px) solid #DFDFDF;
+  border-radius: 4px;
+  margin: 0 calculateSize(10px);
+  font-size: 16px;
+  color: #353535;
+  text-align: center;
+}
+.multiple img{
+  width: calculateSize(60px);
+  height: calculateSize(60px);
+}
+
+/* 倍数 begin */
+
+/* 编辑 begin*/
+
+.betting .football-label div.disabled{
+  background: rgba(134,136,138,.2);
+  border-color: rgba(134,136,138,.2);
+  color: #353535;
+}
+.betting .football-label div.disabled span{
+  color: #999;
+}
+.editor-football .bonus-content{
+  padding-top: calculateSize(16px);
+  margin-bottom: calculateSize(-30px);
+}
+.football-edit{
+  position: relative;
+  padding: calculateSize(30px) calculateSize(20px) calculateSize(20px);
+  margin-bottom: calculateSize(30px);
+  background: #F6F6F9;
+}
+.icon-editor{
+  width: calculateSize(50px);
+  height: calculateSize(50px);
+  position: absolute;
+  top: calculateSize(25px);
+  right: calculateSize(20px);
+}
+.football-issue{
+  height: calculateSize(40px);
+  font-size: 14px;
+  color: #888;
+}
+
+.football-issue img{
+  width: calculateSize(40px);
+  height: calculateSize(40px);
+  margin-right: calculateSize(10px);
+  vertical-align: middle;
+}
+.football-issue span{
+  padding-left: calculateSize(30px);
+}
+.football-team{
+  display: flex;
+  margin: calculateSize(25px) 0 calculateSize(6px);
+}
+.football-team div{
+  margin-right: calculateSize(40px);
+  line-height: calculateSize(40px);
+  font-size: 14px;
+  color: #888;
+
+}
+/* 选号 end*/
+.edit-tips{
+  padding-top: calculateSize(30px);
+  font-size: 13px;
+  color: #888;
+  text-align: center;
+}
+
+/* body end*/
+
+
